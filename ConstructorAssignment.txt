@@ -1,0 +1,115 @@
+Problem 1
+
+package kodnestjava;
+
+
+
+class Mobile{
+	
+	int size;
+	String brand;
+	String model;
+	int numOfCamera;
+	int mpOfCamera;
+	int batterySize;
+	String batteryType;
+	String screenType;
+	int refreshRate;
+	String bodyType;
+	
+
+	
+public Mobile(int size, String brand, String model, int numOfCamera, int mpOfCamera, int batterySize,
+			String batteryType, String screenType, int refreshRate, String bodyType) {
+		super();
+		this.size = size;
+		this.brand = brand;
+		this.model = model;
+		this.numOfCamera = numOfCamera;
+		this.mpOfCamera = mpOfCamera;
+		this.batterySize = batterySize;
+		this.batteryType = batteryType;
+		this.screenType = screenType;
+		this.refreshRate = refreshRate;
+		this.bodyType = bodyType;
+	}
+void call() {
+	System.out.println("Mobile make calls");
+}
+void video() {
+	System.out.println("voide is playing");
+}
+}
+public class MobileApp {
+
+	public static void main(String[] args) {
+	
+		Mobile m=new Mobile(5, "Samsung", "A series", 4, 64, 4500, "Lithium-ion", "Oled", 144, "plastic");
+		System.out.println(m.size+" inc "+m.brand+" phone  of model"+m.model+" which have "+m.numOfCamera+" camera with a mega pixel of "
+		+m.mpOfCamera +" with a battery size of "+m.batterySize+" which is a "+m.batteryType+" with a screen of "+m.screenType+" which has a "+m.refreshRate+" Hz display"+" with a "+m.bodyType+" back ");
+	
+	}
+
+}
+
+output:-----------------------------------------------------------------------------------------------------------------
+5 inc Samsung phone  of modelA series which have 4 camera with a mega pixel of 64 with a battery size of 4500 which is a Lithium-ion with a screen of Oled which has a 144 Hz display with a plastic back
+
+=================================================================================================================================
+problem 2
+
+package kodnestjava;
+
+class Pg{
+	
+	int noOfStaff;
+	String adress;
+	int noOfFloore;
+	int distanceFromKodnest;
+	int breackFastTime;
+	int lunchTime;
+	int dinnerTime;
+	String isGoodFood;
+	String timingToEnter;
+	String roomsAvaliable;
+	
+	public Pg(int noOfStaff, String adress, int noOfFloore, int distanceFromKodnest, int breackFastTime, int lunchTime,
+			int dinnerTime, String isGoodFood, String timingToEnter, String roomsAvaliable) {
+		super();
+		this.noOfStaff = noOfStaff;
+		this.adress = adress;
+		this.noOfFloore = noOfFloore;
+		this.distanceFromKodnest = distanceFromKodnest;
+		this.breackFastTime = breackFastTime;
+		this.lunchTime = lunchTime;
+		this.dinnerTime = dinnerTime;
+		this.isGoodFood = isGoodFood;
+		this.timingToEnter = timingToEnter;
+		this.roomsAvaliable = roomsAvaliable;
+	}
+
+void people() {
+	System.out.println("Pg people are good");
+}
+void clean() {
+	System.out.println("Pg clean at 11 am daily");
+}
+	
+}
+
+
+public class PgApp {
+
+	public static void main(String[] args) {
+		
+	Pg p=new Pg(4, "BTM 2nd layout", 5, 1, 7, 1, 8, "No good food", "Any time", "no");
+	System.out.println(p.noOfStaff+" "+p.adress+" "+p.noOfFloore+" "+p.distanceFromKodnest+" "+p.breackFastTime+" "+p.lunchTime+" "+p.dinnerTime+" "+p.isGoodFood+" "+p.timingToEnter+" "+p.roomsAvaliable);
+	p.people();
+
+	}
+
+}
+output:-------------------------------------------------------------------------------------------------------------------------
+4 BTM 2nd layout 5 1 7 1 8 No good food Any time no
+Pg people are good
+S 
